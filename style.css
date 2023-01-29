@@ -1,0 +1,114 @@
+/*
+PALETTE
+1A1A1D
+2A1B3D
+D83F87
+44318D
+8DA7BE
+59B654
+*/
+
+/*
+ALT PALETTE
+2E4057
+66A182
+CAFFB9
+AEF78E
+91F466
+*/
+
+body {
+  background-color: #1A1A1D;
+  color: white;
+  font-family: 'Roboto+Mono', monospace;
+}
+
+/* General-use */
+.centeredbox { /* Flexbox where everythign is center aligned */
+  display: flex;
+  align-items: center;
+}
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding-top: 20px;
+}
+
+
+/* Item-specific stuff */
+.titletext {
+  font-size: xx-large;
+}
+.profile { /* Profile picture */
+  border-radius: 50%;
+  max-width: 25%;
+  height: auto;
+  padding: 100px;
+}
+.centerednav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.centerednav li a {
+  color: white;
+  font-size: x-large;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.centerednav li a:hover {
+  color: #AEF78E;
+}
+.centerednav .active {
+  color: #91F466;
+}
+
+/* Styling text */
+.highlight_pink { /* For bolding important stuff */
+  /* color: #D83F87; */
+  color: #91F466;
+  font-weight: bold;
+}
+.highlight_blue { /* For bolding important stuff */
+  /* color: #59B654; */
+  color: #91F466;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.fade1s {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+.fade2s {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+
+
+
+
+@media (max-width: 800px) {
+  .centeredbox {
+    flex-direction: column;
+  }
+  .profile {
+    padding: 20px;
+    max-width: 75%;
+  }
+}
