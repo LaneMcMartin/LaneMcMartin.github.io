@@ -17,6 +17,10 @@ AEF78E
 91F466
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #1A1A1D;
   color: white;
@@ -27,6 +31,7 @@ body {
 .centeredbox { /* Flexbox where everythign is center aligned */
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .sticky {
   position: -webkit-sticky; /* Safari */
@@ -46,13 +51,30 @@ body {
   height: auto;
   padding: 100px;
 }
+.projectitem {
+  padding: 20px;
+  width: 100%;
+  margin: 10px;
+  max-width: 30%;
+}
+.projectitem img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.projectitem ul {
+  color: #AEF78E;
+  font-weight: bold;
+  font-size: large;
+}
 .centerednav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  background-color: #1A1A1D;
 }
 .centerednav li a {
   color: white;
@@ -75,7 +97,7 @@ body {
 }
 .highlight_blue { /* For bolding important stuff */
   /* color: #59B654; */
-  color: #91F466;
+  color: #AEF78E;
   font-weight: bold;
 }
 
@@ -110,5 +132,9 @@ body {
   .profile {
     padding: 20px;
     max-width: 75%;
+  }
+  .projectitem {
+    max-width: 80%;
+    padding: 10px;
   }
 }
