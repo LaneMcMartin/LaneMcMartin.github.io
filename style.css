@@ -39,6 +39,11 @@ body {
   top: 0;
   padding-top: 20px;
 }
+.leftbox { /* Flexbox where everything is left aligned */
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
 
 
 /* Item-specific stuff */
@@ -87,6 +92,19 @@ body {
 }
 .centerednav .active {
   color: #91F466;
+}
+.centeredicons {
+  padding-left: 0;
+  padding-right: 60px;
+  color: white;
+  text-decoration: none;
+}
+.centeredicons a {
+  color: white;
+  text-decoration: none;
+}
+.centeredicons:hover {
+  color: #AEF78E;
 }
 
 /* Styling text */
