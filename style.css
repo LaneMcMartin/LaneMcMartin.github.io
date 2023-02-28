@@ -33,6 +33,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+.centeredboxfeature { /* Flexbox where everythign is center aligned */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25252A;
+  flex-direction: column;
+}
 .sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -68,7 +75,7 @@ body {
   height: 100%;
 }
 .projectitem ul {
-  color: #AEF78E;
+  color: #c77dff;
   font-weight: bold;
   font-size: large;
 }
@@ -78,7 +85,7 @@ body {
   justify-content: center;
   list-style-type: none;
   margin: 0;
-  padding: 10px;
+  padding: 20px;
   background-color: #1A1A1D;
 }
 .centerednav li a {
@@ -88,10 +95,10 @@ body {
   text-decoration: none;
 }
 .centerednav li a:hover {
-  color: #AEF78E;
+  color: #c77dff;
 }
 .centerednav .active {
-  color: #91F466;
+  color: #9d4edd;
 }
 .centeredicons {
   padding-left: 0;
@@ -104,19 +111,25 @@ body {
   text-decoration: none;
 }
 .centeredicons:hover {
-  color: #AEF78E;
+  color: #c77dff;
 }
 
 /* Styling text */
-.highlight_pink { /* For bolding important stuff */
+.highlight_dark { /* For bolding important stuff */
   /* color: #D83F87; */
-  color: #91F466;
+  color: #9d4edd;
   font-weight: bold;
 }
-.highlight_blue { /* For bolding important stuff */
+.highlight_light { /* For bolding important stuff */
   /* color: #59B654; */
-  color: #AEF78E;
+  color: #c77dff;
   font-weight: bold;
+}
+.highlight_featured { /* For bolding important stuff */
+  /* color: #59B654; */
+  color: #9d4edd;
+  font-weight: bold;
+  padding-top: 15px;
 }
 .whitelink {
   color: white;

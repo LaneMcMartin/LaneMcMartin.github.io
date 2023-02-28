@@ -6,6 +6,7 @@
     <title>Lane McMartin</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap">
     <link rel="stylesheet" href="style.css">
+  />
     <script src="https://kit.fontawesome.com/4bdb791382.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -15,13 +16,13 @@
       <div class="titletext">
         <div class="fade1s">
           <h1>Hello!</h1>
-          <h2>My name is <span class="highlight_pink">Lane McMartin</span>.</h2>
+          <h2>My name is <span class="highlight_dark">Lane McMartin</span>.</h2>
         </div>
         <div class="fade2s">
-          <p>I'm an Electrical Engineer interested in <span class="highlight_blue">embedded system programming</span>, <span class="highlight_blue">hardware design</span>, and <span class="highlight_blue">signal processing.</span></p>
+          <p>I'm an Electrical Engineer interested in <span class="highlight_light">embedded system programming</span>, <span class="highlight_light">hardware design</span>, and <span class="highlight_light">signal processing.</span></p>
           <p>I'm also interested in game development, film, and photography!</p>
           <div class="leftbox">
-            <a class="centeredicons" href="files\lane_mcmartin_resume.pdf" download="lane_mcmartin_resume.pdf" target="_blank"><p><i class="fa-solid fa-user"></i> Resume</p></a>
+            <a class="centeredicons" href="files\lane_mcmartin_resume_digital.pdf" download="lane_mcmartin_resume.pdf" target="_blank"><p><i class="fa-solid fa-user"></i> Resume</p></a>
             <a class="centeredicons" href="https://www.linkedin.com/in/lanemcmartin/" target="_blank"><p><i class="fa-brands fa-linkedin"></i> LinkedIn</p></a>
             <a  class="centeredicons" href="https://github.com/LaneMcMartin/" target="_blank"><p><i class="fa-brands fa-github"></i> GitHub</p></a>
           </div>
@@ -44,14 +45,52 @@
 
     <!-- Projcts -->
     <div id="projects">
+      <div class="centeredboxfeature">
+        <h1 class="highlight_featured">FEATURED PROJECT</h1>
+        <div class="centeredbox">
+          <a href="files\capstone_poster_full.png" download="capstone_poster_full.png" target="_blank" class="projectitem fade1s">
+            <img src="images/capstone.png" atl="Capstone project poster.">
+          </a>
+          <div class="projectitem">
+            <h1 class="highlight_dark">Wearable Health Monitor Capstone Project</h1>
+            <!-- <p>For our capstone project, we designed a wearable health monitor to track of heart rate, blood oxygen, and skin temperature.
+              This involved collaborating within a team to draft an electrical schematic in KiCAD that integrated the client’s own processor into the design.
+              Leading the firmware for the project, I worked with C++, MATLAB, and the client-owned cross-compiler to write the firmware for the onboard processor.
+              I also wrote detailed documentation regarding the design rationale, construction, and operation of the device.
+            </p> -->
+            <p>
+              This project involved collaborating with a team and a
+              client to design a product that could measure, analyze, and transmit information using the client’s own
+              processor.
+              <br><br>
+              Datasheet inspection, electrical analysis, and schematic capture provided ample experience across the 
+              development lifecycle. Documentation detailing the functionality, design process, and
+              operating conditions of the project greatly improved my technical writing. Spearheading the project firmware, I
+              gained experience writing C++ and MATALAB. Finally, I
+              grew as a leader through scheduling meetings, organizing documents, maintaining schedules, and taking initiative.
+              <br><br>
+              Our project ranked in the top 3; and I returned the next year as a volunteer judge for the course!
+            </p>
+            <ul>
+              <li>C++</li>
+              <li>Hardware Design</li>
+              <li>MATLAB</li>
+              <li>KiCAD</li>
+              <li>Technical Writing</li>
+              <li>Project Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="centeredbox">
         <a href="https://github.com/LaneMcMartin/laneWebsite" target="_blank" class="projectitem fade1s">
           <img src="images/website.png" atl="Screenshot of HTML code.">
         </a>
         <div class="projectitem">
-          <h1 class="highlight_pink">Personal Website</h1>
-          <p>I've wanted to put together my own website for a while now, so I decided to challenge myself
-            and see if I could put something together over a weekend. I'm very happy with how it turned out!
+          <h1 class="highlight_dark">Personal Website</h1>
+          <p>I've wanted to put together my own portfolio website for a while now, so I decided to challenge myself
+            and see if I could put something together over a weekend. I was surprised at how quickly I was able to
+            dust off HTML/CSS after a few years and I'm very happy with how the site turned out!
           </p>
           <ul>
             <li>HTML</li>
@@ -65,7 +104,7 @@
           <img src="images/necromancer_reloaded.png" atl="Screenshot of a Godot game.">
         </a>
         <div class="projectitem">
-          <h1 class="highlight_pink">Necromancer Reloaded - Godot Game</h1>
+          <h1 class="highlight_dark">Necromancer Reloaded - Godot Game</h1>
           <p>After making a game in Unity for a Hackathon, I became more interested in persuing game development as a hobby.
             This led me to discover the Godot engine, an open-source game engine that uses GDScript (a dynamically-typed Python-esque langauge)
             and C#. Curious to try learning a new (albeit niche) programming language and a new engine, I decided to make my next game in Godot.
@@ -89,7 +128,7 @@
           <img src="images/virusgame.png" atl="Screenshot of a C# Unity game.">
         </a>
         <div class="projectitem">
-          <h1 class="highlight_pink">virus.exe - C# Hackathon Game</h1>
+          <h1 class="highlight_dark">virus.exe - C# Hackathon Game</h1>
           <p>For HackED 2022 (a hackathon at the University of Alberta) my friends and I
             collaborated to create a PC game in Unity over 24 hours. This offered me the chance
             to learn C# and exercise some creative skills in asset development and game design!
@@ -107,38 +146,6 @@
             <li>C#</li>
             <li>Unity</li>
             <li>Photoshop</li>
-          </ul>
-        </div>
-      </div>
-      <div class="centeredbox">
-        <img src="images/capstone.png" atl="Capstone project poster." class="projectitem fade1s">
-        <div class="projectitem">
-          <h1 class="highlight_pink">Wearable Health Monitor Capstone Project</h1>
-          <!-- <p>For our capstone project, we designed a wearable health monitor to track of heart rate, blood oxygen, and skin temperature.
-            This involved collaborating within a team to draft an electrical schematic in KiCAD that integrated the client’s own processor into the design.
-            Leading the firmware for the project, I worked with C++, MATLAB, and the client-owned cross-compiler to write the firmware for the onboard processor.
-            I also wrote detailed documentation regarding the design rationale, construction, and operation of the device.
-          </p> -->
-          <p>
-            This project involved collaborating with a team and a
-            client to design a product that could measure, analyze, and transmit information using the client’s own
-            processor.
-            <br><br>
-            Datasheet inspection, electrical analysis, and schematic capture provided ample experience across the 
-            development lifecycle. Documentation detailing the functionality, design process, and
-            operating conditions of the project greatly improved my technical writing. Spearheading the project firmware, I
-            gained experience writing C++ and MATALAB. Finally, I
-            grew as a leader through scheduling meetings, organizing documents, maintaining schedules, and taking initiative.
-            <br><br>
-            Our project ranked in the top 3; and I returned the next year as a volunteer judge for the course!
-          </p>
-          <ul>
-            <li>C++</li>
-            <li>Hardware Design</li>
-            <li>MATLAB</li>
-            <li>KiCAD</li>
-            <li>Technical Writing</li>
-            <li>Project Management</li>
           </ul>
         </div>
       </div>
